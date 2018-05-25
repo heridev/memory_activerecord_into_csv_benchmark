@@ -10,6 +10,8 @@ string using `CSV.generate`
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/1863670/40548883-99c90408-5ffb-11e8-9a35-118015216516.png)
 
+![image](https://user-images.githubusercontent.com/1863670/40549785-fcefa8fa-5ffd-11e8-99d7-497aa69e04a0.png)
+
 ## Getting Started
 
 All you need to start playing with these example is cloning the repository
