@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+
+development:
+  <<: *default
+  database: memory_consumption_development
+
+test: &test
+  <<: *default
+  database: memory_consumption_test
