@@ -46,6 +46,18 @@ using batches with ActiveRecord
 ruby app/csv_generate_without_activerecord_batches.rb
 ```
 
+When trying to decorate a csv file that has invalid encoding characters
+with you open it in a program for example microsoft excel or android
+google sheet you need to generate your csv using CSV.open but then you
+also need to include a BOOM at the very beggining so this way you can do
+that for avoiding the excess usage of RAM in your application or in case
+you have a large string and you want to iterate it or remove some spaces
+or make some modification you can follow the same approach with file
+read way in batches/chuncks :)
+```
+ruby app/modify_generated_csv_file_for_including_bom_utf8_without_loading_the_whole_file_in_memory.rb
+```
+
 ### Reading csv files
 First we need to start generating a csv file with lot of rows and also
 we will see that this operation does not consume that much memory
